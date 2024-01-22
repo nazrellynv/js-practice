@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #colorPink, #colorGray, #colorAquamarine {
+      width: 120px;
+      height: 60px;
+      margin: 20px;
+      border: none;
+      font-size: 16px;
+    }
+    #container {
+      text-align: center;
+  
+    }
+  </style>
+</head>
+<body>
+
+  <button id="colorPink" onclick="changeColor1()">pink</button>
+  <button id="colorGray" onclick="changeColor2()">gray</button>
+  <button id="colorAquamarine" onclick="changeColor3()">aquamarine</button>
+  <h1 id="container"></h1>
+
+ 
+
+
+  <script>
+    function changeColor1() {
+      document.body.style.backgroundColor= "pink";
+      document.getElementById('colorPink').style.backgroundColor= "pink";
+      document.getElementById('container').innerHTML="pink"
+
+    }
+    function changeColor2() {
+      document.body.style.backgroundColor= "gray";
+      document.getElementById('colorGray').style.backgroundColor="gray";
+      document.getElementById('container').innerHTML="gray"
+
+
+    }
+    function changeColor3() {
+      document.body.style.backgroundColor= "aquamarine";
+      document.getElementById('colorAquamarine').style.backgroundColor= "aquamarine";
+      document.getElementById('container').innerHTML="aquamarine"
+
+
+    }
+
+
+  </script>
+  
+</body>
+</html>
